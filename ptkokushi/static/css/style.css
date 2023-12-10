@@ -1,0 +1,141 @@
+/*全体の画像*/
+#all-display{
+    background-color: aliceblue;
+}
+
+/*トップのナビのdivの部分の位置関係*/
+#top-nav{
+    background-color: #CCFFFF;
+    width: auto;
+    height: auto;
+}
+
+/*理学療法国試アプリのCSS*/
+#title_top{
+    background-color:#fffdfa;
+    width: 430px;
+    font-size: 48px;
+    font-weight: bold;
+    border: solid 3px black;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-shadow: 1px 1px 2px gray;
+    margin: 30px;
+}
+
+/*理学療法国試アプリのdiv要素*/
+.title{
+    display: inline-block;
+}
+
+/*タイマー用のCSS*/
+p.atdays {
+    display: inline-block;
+    margin: 0 auto 10px;
+    background: #f0db3f;
+    color: #313131;
+    padding: 3px 20px;
+    position: relative;
+    border-radius: 2px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+p.atdays:after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    margin-left: -10px;
+    border: 10px solid transparent;
+    border-top: 10px solid #f0db3f;
+    z-index: 2;
+}
+p#countTimer {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    text-align: center;
+
+}
+p#countTimer span {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-right: 10px;
+}
+/*国試までのタイマーの全体のCSS*/
+#timelimit{
+    display: inline-block;
+    margin: 30px;
+    border: solid 3px black;
+    width: 350px;
+    background-color: beige;
+}
+
+/*サイドバーと問題の位置*/
+#side-quest{
+    display: flex;
+    margin: 20px;
+}
+
+#side-bar{
+    font-weight: bold;
+    background-color: aliceblue;
+    border: solid 3px black;
+    border-radius: 30px;
+}
+
+/*国試の問題の選択肢*/
+#national-examination{
+    margin: 20px;
+    border: solid 3px black;
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+
+.national-year{
+    margin: 20px;
+    padding: 10px;
+    border: solid 2px #008000;
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+    
+}
+
+/*国試年度選択のボタン化*/
+.button{
+    border-radius: 20px;
+    height: 48px;
+    background: #333333;
+    color: #CCFFFF;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity .3s linear;
+    width: 100px;
+  }
+  .button:hover{
+    opacity: 0.5;
+  }
+
+/*国試の問題の奇数と偶数での区分け*/
+.odd{
+    background-color: #CCCCFF;
+    color: #313131;
+}
+
+/*サイドバーのクラス設定*/
+.side-category{
+    border: solid 1px black;
+    text-align: center;
+    background-color: aquamarine;
+    border-radius: 20px 20px 20px 20px;
+    width: auto;
+    height: auto;
+    margin: 20px 15px 20px 15px;
+    padding: 10px 5px 10px 5px;
+    color: #313131;
+}
