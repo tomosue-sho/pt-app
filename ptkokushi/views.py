@@ -38,7 +38,7 @@ def login_view(request):
             if user:
                 login(request, user)
                 if next == 'None':
-                    return redirect(to='/templates/top.html/')
+                    return redirect(to='/templates/top/')
                 else:
                     return redirect(to=next)
     else:
