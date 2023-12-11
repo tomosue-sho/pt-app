@@ -134,6 +134,4 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #ログイン画面実装
-LOGIN_URL = '/login' 
-LOGIN_REDIRECT_URL = 'top'
-LOGOUT_REDIRECT_URL='/login'
+LOGIN_URL = '/login_app/login/'

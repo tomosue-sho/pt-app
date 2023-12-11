@@ -1,10 +1,10 @@
-from django.urls import path
 from . import views
+from django.urls import path
 
-app_name ='ptkokushi'
-
-urlpatterns =[
-    path('login/', views.Login.as_view(), name='login'),
-    path('logout/', views.Logout.as_view(), name='logout'),
+urlpatterns = [
+    path('signup/', views.signup_view, name='signup'),
+    path('login/', views.login_view, name='login'),
+    path('logout/', views.logout_view, name='logout'),
+    path('user/', views.user_view, name='user'),
+    path('other/', views.other_view, name='other'),
 ]
-      
