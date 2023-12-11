@@ -19,13 +19,12 @@ from django.urls import path
 from ptkokushi import views
 from django.conf import settings
 from django.conf.urls.static import static
-from django.conf.urls import include #includeのインポート
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.TopView.as_view(), name="top"),
-    path('ptkokushi/', include('ptkokushi.urls')),
-    path('', include('ptkokushi.urls')),  #追加
+    path('ptproject/', include('ptkokushi.urls'))
 ]
 
 
