@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.http import HttpResponse
 from django.views.generic import TemplateView
 from .forms import SignupForm, LoginForm
 from django.contrib.auth import login, logout
@@ -38,7 +39,7 @@ def login_view(request):
             if user:
                 login(request, user)
                 if next == 'None':
-                    return redirect(to='/templates/top/')
+                    return redirect(to='ptkokushi/templates/top')
                 else:
                     return redirect(to=next)
     else:

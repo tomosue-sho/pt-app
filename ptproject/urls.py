@@ -25,6 +25,6 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.TopView.as_view(), name="top"),
-    path('ptkokushi/', include('ptkokushi.urls'))
+    path('login_app/', include('ptkokushi.urls')),
 ]
 
