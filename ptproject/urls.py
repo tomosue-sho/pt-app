@@ -21,10 +21,10 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.urls import path, include
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.TopView.as_view(), name="top"),
-    path('ptproject/', include('ptkokushi.urls'))
+    path('',views.TopView.as_view(), name="top"),
+    path('login_app/', include('ptkokushi.urls')),
 ]
-
 
