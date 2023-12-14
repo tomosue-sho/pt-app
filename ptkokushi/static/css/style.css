@@ -150,7 +150,7 @@ p#countTimer span {
     }
     body {
     font-family: Arial;
-    background-color: #3498DB;
+    background-color:  #3498DB;
     padding: 50px;
     }
     .login {
@@ -177,9 +177,9 @@ p#countTimer span {
     
     input {
     text-align: center;
-    background-color: #ECF0F1;
-    border: 2px solid transparent;
-    border-radius: 3px;
+    background-color: #CCFFFF;
+    border: 3px solid transparent;
+    border-radius: 5px;
     font-size: 16px;
     font-weight: 200;
     padding: 10px 0;
@@ -188,7 +188,7 @@ p#countTimer span {
     }
     
     input:focus {
-    border: 2px solid #3498DB;
+    border: 2px solid #000;
     box-shadow: none;
     }
     
@@ -202,7 +202,7 @@ p#countTimer span {
       text-decoration: none;
       text-shadow: none;
       border-radius: 3px;
-      box-shadow: none;
+      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.713);;
       transition: 0.25s;
       display: block;
       width: 250px;
@@ -219,3 +219,40 @@ p#countTimer span {
       display: block;
       margin-top: 12px;
     }
+
+/*登録画面*/
+.text-center{
+    text-align: center;
+  }
+
+.container {
+    max-width: 500px;
+    max-height: 150px;
+    margin-top: 10px;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    transition: 0.25s;
+    display: block;
+    margin: 0 auto;
+}
+
+.signup-screen {
+    padding: 20px;
+    padding-bottom: 40px;
+    border-radius: 5px;
+    background-color: #fffdfa;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.713);
+    color: #313131;
+}
+
+.space-bot{
+    margin-bottom: 35px;
+}
+
+.input:hover {
+    background-color: #2980B9;
+  }
+
+#user_signup{
+    color: #313131;
+}

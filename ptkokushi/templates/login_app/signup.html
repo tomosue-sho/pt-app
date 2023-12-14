@@ -4,13 +4,20 @@
 <head>
     <meta charset="utf-8">
     <title>ユーザー登録</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-    <h1>ユーザー登録</h1>
-    <form action="{% url 'ptkokushi:signup' %}" method="post">
-    {% csrf_token %}
-        {{ form.as_p }}
-        <p><input type="submit" value="登録"></p>
-    </form>
+    <div class="container">
+        <div class="signup-screen">
+            <div class="space-bot text-center">
+                <h1 id = "user_signup">ユーザー登録</h1>
+                <form action="{% url 'ptkokushi:signup' %}" method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <p id = "signup_btn"><input type="submit" value="登録"></p>
+                </form>
+            </div>
+        </div>            
+    <div>
 </body>
 </html>
