@@ -1,6 +1,7 @@
 /*全体の画像*/
 #all-display{
     background-color: aliceblue;
+    width: auto;
 }
 
 /*トップのナビのdivの部分の位置関係*/
@@ -75,8 +76,8 @@ p#countTimer span {
 
 /*サイドバーと問題の位置*/
 #side-quest{
-    display: flex;
-    margin: 20px;
+    display: flex !important;
+    margin: 20px !important;
 }
 
 #side-bar{
@@ -152,6 +153,7 @@ p#countTimer span {
     font-family: Arial;
     background-color:  #3498DB;
     padding: 50px;
+    width: auto;
     }
     .login {
     margin: 20px auto;
@@ -225,8 +227,8 @@ p#countTimer span {
     text-align: center;
   }
 
-.container {
-    max-width: 500px;
+#container {
+    max-width: 450px;
     max-height: 150px;
     margin-top: 10px;
     border: 2px solid transparent;

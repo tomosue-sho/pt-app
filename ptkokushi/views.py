@@ -39,7 +39,7 @@ def login_view(request):
             if user:
                 login(request, user)
                 if next == 'None':
-                    return redirect(to='ptkokushi/templates/top')
+                    return redirect(to='top')
                 else:
                     return redirect(to=next)
     else:
