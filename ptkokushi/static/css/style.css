@@ -1,7 +1,12 @@
 /*全体の画像*/
 #all-display{
-    background-color: aliceblue;
+    height:448px;
+    width:400px;
+    background-color:#8be4f0;
     width: auto;
+    height: auto;
+    border-radius: 20px;
+    border: solid 3px black;
 }
 
 /*トップのナビのdivの部分の位置関係*/
@@ -9,19 +14,18 @@
     background-color: #CCFFFF;
     width: auto;
     height: auto;
+    padding: auto;
+    border-radius: 20px 20px 0px 0px;
 }
 
 /*理学療法国試アプリのCSS*/
 #title_top{
-    background-color:#fffdfa;
-    width: 430px;
-    font-size: 48px;
-    font-weight: bold;
-    border: solid 3px black;
-    text-align: center;
-    letter-spacing: 0.1em;
-    text-shadow: 1px 1px 2px gray;
-    margin: 30px;
+        color: #fff;
+        border: 2px dashed #fff;
+        background-color: #4989ff;
+        box-shadow: 0px 0px 0px 10px #4989ff;
+        padding: 10px;
+        margin: 17px;
 }
 
 /*理学療法国試アプリのdiv要素*/
@@ -32,7 +36,7 @@
 /*タイマー用のCSS*/
 p.atdays {
     display: inline-block;
-    margin: 0 auto 10px;
+    margin: auto;
     background: #f0db3f;
     color: #313131;
     padding: 3px 20px;
@@ -77,14 +81,16 @@ p#countTimer span {
 /*サイドバーと問題の位置*/
 #side-quest{
     display: flex !important;
-    margin: 20px !important;
+    margin: 20px;
 }
 
 #side-bar{
     font-weight: bold;
-    background-color: aliceblue;
+    background-color: whitesmoke;
     border: solid 3px black;
-    border-radius: 30px;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
 }
 
 /*国試の問題の選択肢*/
@@ -108,18 +114,19 @@ p#countTimer span {
 
 /*国試年度選択のボタン化*/
 .button{
-    border-radius: 20px;
-    height: 48px;
-    background: #333333;
-    color: #CCFFFF;
-    font-size: large;
-    font-weight: bold;
-    cursor: pointer;
-    transition: opacity .3s linear;
-    width: 100px;
+  transition: 0.3s all ease-in-out;
+  padding: 15px 30px;
+  color: #00b4ff;
+  text-decoration: none;
+  border: 2px solid #00b4ff;
+  background: rgba(255, 255, 255, 0.9);  
+  border-radius: 50px;
+  box-shadow: inset rgba(97, 202, 246, 0.7) 0px 0px 10px, rgba(97, 202, 246, 0.3) 0px 11px 20px 3px;
   }
   .button:hover{
-    opacity: 0.5;
+  color: #ffffff;
+  background: linear-gradient(60deg, #00b3fe, #00b4ff);
+  box-shadow: rgba(97, 202, 246, 0.9) 0px 15px 30px;
   }
 
 /*国試の問題の奇数と偶数での区分け*/
@@ -128,18 +135,43 @@ p#countTimer span {
     color: #313131;
 }
 
+
+
+
 /*サイドバーのクラス設定*/
-.side-category{
-    border: solid 1px black;
-    text-align: center;
-    background-color: aquamarine;
-    border-radius: 20px 20px 20px 20px;
-    width: auto;
-    height: auto;
-    margin: 20px 15px 20px 15px;
-    padding: 10px 5px 10px 5px;
-    color: #313131;
+/* ボタンのスタイル */
+.button-001 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    margin:10px;
+    padding: .9em 2em;
+    border: 1px solid #2589d0;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #2589d0;
+    font-size: 1em;
 }
+
+.button-001::after {
+    transform: rotate(45deg);
+    width: 5px;
+    height: 5px;
+    margin-left: 10px;
+    border-top: 2px solid #2589d0;
+    border-right: 2px solid #2589d0;
+    content: '';
+}
+
+.button-001:hover{
+    color: #ffffff;
+    background: linear-gradient(60deg, #00b3fe, #00b4ff);
+    box-shadow: rgba(97, 202, 246, 0.9) 0px 15px 30px;
+}
+
+
+
 
 /*ログイン画面*/
 * {
@@ -151,7 +183,8 @@ p#countTimer span {
     }
     body {
     font-family: Arial;
-    background-color:  #3498DB;
+    height:100vh;
+    background-color: #edfeff;
     padding: 50px;
     width: auto;
     }
@@ -174,26 +207,24 @@ p#countTimer span {
     text-align: center;
     }
     .control-group {
-    margin-bottom: 10px;
-    }
-    
-    input {
-    text-align: center;
-    background-color: #CCFFFF;
-    border: 3px solid transparent;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: 200;
-    padding: 10px 0;
-    width: 250px;
-    transition: border .5s;
-    }
-    
-    input:focus {
-    border: 2px solid #000;
-    box-shadow: none;
-    }
-    
+        margin-bottom: 10px;
+        }
+        
+        input {
+        text-align: center;
+        background-color: #ECF0F1;
+        border: 2px solid transparent;
+        border-radius: 3px;
+        font-size: 16px;
+        font-weight: 200;
+        padding: 10px 0;
+        width: 250px;
+        transition: border .5s;
+        }
+        input:focus {
+            border: 2px solid #3498DB;
+            box-shadow: none;
+            }
     .btn {
       border: 2px solid transparent;
       background: #3498DB;
