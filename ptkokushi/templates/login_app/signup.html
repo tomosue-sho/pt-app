@@ -14,7 +14,7 @@
                 <form action="{% url 'ptkokushi:signup' %}" method="post">
                 {% csrf_token %}
                 {{ form.as_p }}
-                <p id = "signup_btn"><input type="submit" value="登録"></p>
+                <p><input class = "button-two" type="submit" value="登録"></p>
                 </form>
             </div>
         </div>            

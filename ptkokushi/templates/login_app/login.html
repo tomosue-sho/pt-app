@@ -10,7 +10,7 @@
         <div class="login">
           <div class="login-screen">
             <div class="app-title">
-              <h1>理学療法士<br>国試対策アプリ<br>ログイン画面</h1>
+              <h1 class = "app-title2">理学療法士<br>国試対策アプリ<br>ログイン画面</h1>
             </div>
             <form action="{% url 'ptkokushi:login' %}" method="post">
                 {% csrf_token %}
@@ -18,6 +18,9 @@
                     <p><input type="hidden" name="next" value="{{next}}"></p>
                     <p><input type="submit" value="ログイン"></p>
             </form>
+            <form action = "{% url 'ptkokushi:signup' %}">
+              <button id = "signup_form">アカウント新規作成</button>
+            </form>  
           </div>
         </div>
       </body>

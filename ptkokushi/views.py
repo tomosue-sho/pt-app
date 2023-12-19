@@ -83,3 +83,4 @@ def other_view(request):
     return render(request, 'login_app/other.html', params)
 
 
+ 
